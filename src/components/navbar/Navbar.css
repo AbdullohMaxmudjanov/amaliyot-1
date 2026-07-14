@@ -1,0 +1,220 @@
+:root {
+  --primary: #2a254b;
+  --secondary: #726e8d;
+  --border: #ebe8f4;
+  --white: #ffffff;
+}
+
+.navbar__container{
+    max-width:1440px;
+    margin:0 auto;
+    padding:0px;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.sarlavha {
+  width: 100%;
+  background: var(--white);
+}
+
+.sarlavha__yuqori {
+  height: 80px;
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo__yozuv {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.amallar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qidiruv,
+.ikonka,
+.menyu_tugmasi {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.desktop-search {
+  display: flex;
+}
+
+.mobile-search {
+  display: none;
+}
+
+.menyu_tugmasi {
+  display: none;
+}
+
+.menu {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+
+.menu__havola {
+  color: var(--secondary);
+  font-size: 16px;
+  transition: .3s;
+}
+
+.menu__havola:hover {
+  color: var(--primary);
+}
+
+.mobil_soya {
+  position: fixed;
+  background: rgba(0,0,0,.45);
+  transition: .3s;
+}
+
+.mobil_soya__ochiq {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobil_menu {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 280px;
+  height: 100vh;
+  background: #fff;
+  transition: .35s;
+  box-shadow: -5px 0 20px rgba(0,0,0,.08);
+  z-index: 1000;
+}
+
+.mobil_menu__ochiq {
+  right: 0;
+}
+
+.mobil_menu__yuqori {
+  height: 70px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mobil_menu__logo {
+  font-size: 22px;
+  color: var(--primary);
+}
+
+.mobil_menu__amallar {
+  display: flex;
+  gap: 10px;
+}
+
+.mobil_menu__ikonka {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.mobil_menu__sahifalar {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.mobil_menu__havola {
+  padding: 15px 0;
+  border-bottom: 1px solid #f3f3f3;
+  color: var(--secondary);
+}
+
+@media (max-width:768px){
+
+  .menu,
+  .kompyuterda{
+    display:none;
+  }
+
+  .desktop-search{
+    display:none;
+  }
+
+  .mobile-search{
+    display:flex;
+  }
+
+  .menyu_tugmasi{
+    display:flex;
+  }
+
+  .sarlavha__yuqori{
+    height:70px;
+    padding:0 20px;
+  }
+
+  .logo{
+    position:static;
+    transform:none;
+  }
+
+  .amallar{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+
+}
+
+@media (min-width:769px){
+
+  .mobil_menu,
+  .mobil_soya{
+    display:none;
+  }
+
+  .desktop-search{
+    display:flex;
+  }
+
+  .mobile-search{
+    display:none;
+  }
+
+}

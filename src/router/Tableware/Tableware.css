@@ -1,0 +1,373 @@
+:root {
+  --asosiy-rang: #2a254b;
+  --matn-rang: #505977;
+  --fon-rang: #f9f9f9;
+  --oq-rang: #ffffff;
+  --chegara-rang: #ebe8f4;
+  --matn-rang: rgba(255, 255, 255, 0.8);
+  --input-rang: rgba(255, 255, 255, 0.15);
+  --chegara-rang: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.mahsulotlar {
+  padding: 70px 0;
+}
+
+.mahsulot_sarlavha {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--asosiy-rang);
+  margin-bottom: 45px;
+}
+
+.filter_desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.filter_chap {
+  display: flex;
+  gap: 25px;
+}
+
+.filter_ong {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter_ong span {
+  color: var(--matn-rang);
+  font-size: 14px;
+}
+
+.filter_desktop select {
+  border: none;
+  background: transparent;
+  color: var(--asosiy-rang);
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter_mobile {
+  display: none;
+}
+
+.mahsulot_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 24px;
+}
+
+.mahsulot_karta img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1.25;
+  object-fit: cover;
+}
+
+.mahsulot_karta h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--asosiy-rang);
+}
+
+.mahsulot_karta p {
+  margin-top: 10px;
+  color: var(--matn-rang);
+  font-size: 18px;
+}
+
+.korish_btn {
+  display: block;
+  margin: 60px auto 0;
+  width: 170px;
+  height: 56px;
+  border: none;
+  background: var(--fon-rang);
+  color: var(--asosiy-rang);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.pastki {
+  background: var(--asosiy-rang);
+  padding: 60px 0 25px;
+}
+
+.ustki_qism {
+  display: grid;
+  grid-template-columns: 160px 160px 160px 1fr;
+  gap: 50px;
+}
+
+.bolim {
+  display: flex;
+  flex-direction: column;
+}
+
+.bolim h3,
+.email_qism h3 {
+  color: var(--oq-rang);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.bolim a {
+  color: var(--matn-rang);
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 14px;
+  transition: .3s;
+}
+
+.email_qism {
+  width: 100%;
+}
+
+.email_input {
+  display: flex;
+  width: 100%;
+}
+
+.email_input input {
+  flex: 1;
+  height: 56px;
+  border: none;
+  outline: none;
+  background: var(--input-rang);
+  color: var(--oq-rang);
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.email_input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email_input button {
+  width: 140px;
+  border: none;
+  background: var(--oq-rang);
+  color: var(--asosiy-rang);
+  cursor: pointer;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.chiziq {
+  width: 100%;
+  height: 1px;
+  background: var(--chegara-rang);
+  margin: 50px 0 25px;
+}
+
+.past_qism {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.past_qism p {
+  color: var(--matn-rang);
+  font-size: 14px;
+}
+
+.iconlar {
+  display: flex;
+  gap: 18px;
+  color: var(--oq-rang);
+  font-size: 18px;
+}
+
+.iconlar svg {
+  cursor: pointer;
+  transition: .3s;
+}
+
+@media (max-width: 992px) {
+  .ustki_qism {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .email_qism {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .pastki {
+    padding: 40px 0 20px;
+  }
+
+  .ustki_qism {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+
+  .email_qism {
+    grid-column: 1 / 3;
+  }
+
+  .email_input {
+    margin-top: 10px;
+  }
+
+  .email_input input {
+    height: 52px;
+  }
+
+  .email_input button {
+    width: 120px;
+  }
+
+  .past_qism {
+    justify-content: center;
+  }
+
+  .iconlar {
+    display: none;
+  }
+
+  .past_qism p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ustki_qism {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .email_qism {
+    grid-column: 1 / 3;
+  }
+
+  .email_input input {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .email_input button {
+    width: 90px;
+    font-size: 14px;
+  }
+
+  .bolim h3,
+  .email_qism h3 {
+    font-size: 17px;
+  }
+
+  .bolim a {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .chiziq {
+    margin: 35px 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .mahsulot_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .mahsulotlar {
+    padding: 50px 0;
+  }
+
+  .mahsulot_sarlavha {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .filter_desktop {
+    display: none;
+  }
+
+  .filter_mobile {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .filter_mobile button {
+    height: 48px;
+    border: none;
+    background: var(--fon-rang);
+    color: var(--asosiy-rang);
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .mahsulot_grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 22px 16px;
+  }
+
+  .mahsulot_karta h3 {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .mahsulot_karta p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+
+  .korish_btn {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width:480px) {
+
+  .mahsulot_sarlavha {
+    font-size: 30px;
+  }
+
+  .mahsulot_grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px 14px;
+  }
+
+  .mahsulot_karta h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .mahsulot_karta p {
+    font-size: 14px;
+  }
+
+  .filter_mobile button {
+    font-size: 14px;
+    height: 46px;
+  }
+
+}

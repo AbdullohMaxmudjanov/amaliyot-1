@@ -1,0 +1,648 @@
+:root {
+  --asosiy: #2A254B;
+  --matn: #22202E;
+  --kulrang: #505977;
+  --och: #F9F9F9;
+  --oq: #FFFFFF;
+  --chiziq: #EBE8F4;
+  --asosiy-rang: #2A254B;
+  --ikkinchi-rang: #505977;
+  --oq-rang: #FFFFFF;
+  --och-rang: #F9F9F9;
+  --chegara-rang: #EBE8F4;
+}
+
+.container{
+    max-width:1400px;
+    width:100%;
+    margin:auto;
+    padding:0 20px;
+}
+
+.mahsulot_korinish {
+  padding: 60px 0;
+}
+
+.asosiy_qism {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.stul_rasmi img {
+  width: 100%;
+  display: block;
+}
+
+.malumot_tomoni h1 {
+  font-size: 36px;
+  color: var(--asosiy);
+  font-weight: 400;
+}
+
+.narx_qismi {
+  font-size: 24px;
+  color: var(--kulrang);
+  margin: 18px 0 45px;
+  font-weight: 400;
+}
+
+.tavsif_qismi {
+  padding-bottom: 35px;
+  border-bottom: 1px solid var(--chiziq);
+}
+
+.tavsif_qismi h3 {
+  font-size: 18px;
+  color: var(--asosiy);
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.matn_qismi {
+  color: var(--kulrang);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.royxat_qismi {
+  padding-left: 18px;
+}
+
+.royxat_qismi li {
+  color: var(--kulrang);
+  margin-bottom: 10px;
+}
+
+.olcham_qismi {
+  margin: 35px 0;
+}
+
+.olcham_qismi h3 {
+  color: var(--asosiy);
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.olchamlar {
+  display: flex;
+  gap: 70px;
+}
+
+.olchamlar h4 {
+  color: var(--asosiy);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.olchamlar p {
+  color: var(--kulrang);
+}
+
+.pastki_qism {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.miqdor_qismi {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.miqdor_qismi span {
+  color: var(--asosiy);
+}
+
+.son_tanlash {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: var(--och);
+  padding: 15px 20px;
+}
+
+.son_tanlash button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--kulrang);
+  font-size: 18px;
+}
+
+.savat_tugmasi {
+  background: var(--asosiy);
+  color: var(--oq);
+  border: none;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.savat_tugmasi:hover {
+  opacity: .9;
+}
+
+.yoqishi_mumkin {
+  padding: 80px 0;
+}
+
+.yoqishi_mumkin h2 {
+  font-size: 32px;
+  color: var(--asosiy);
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.kartalar_qatori {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.karta_rasmi {
+  width: 100%;
+  display: block;
+}
+
+.karta_nomi {
+  margin-top: 22px;
+  color: var(--asosiy);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.karta_narxi {
+  margin-top: 10px;
+  color: var(--kulrang);
+}
+
+.tugma_qismi {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.tugma_qismi button {
+  padding: 16px 32px;
+  border: none;
+  background: var(--och);
+  color: var(--asosiy);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.afzallik_qismi {
+  padding: 70px 0;
+}
+
+.afzallik_sarlavha {
+  text-align: center;
+  font-size: 32px;
+  color: var(--asosiy-rang);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.afzallik_qator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.afzallik_karta {
+  background: var(--och-rang);
+  padding: 48px;
+}
+
+.afzallik_icon {
+  font-size: 24px;
+  color: var(--asosiy-rang);
+  margin-bottom: 18px;
+}
+
+.afzallik_karta h3 {
+  font-size: 20px;
+  color: var(--asosiy-rang);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.afzallik_karta p {
+  color: var(--ikkinchi-rang);
+  line-height: 26px;
+}
+
+.obuna_qism {
+  padding: 60px 0;
+  background: var(--och-rang);
+}
+
+.obuna_ichi {
+  background: var(--oq-rang);
+  padding: 70px;
+  text-align: center;
+}
+
+.obuna_ichi h2 {
+  font-size: 36px;
+  color: var(--asosiy-rang);
+  font-weight: 400;
+}
+
+.obuna_ichi p {
+  max-width: 500px;
+  margin: 20px auto 35px;
+  color: var(--ikkinchi-rang);
+  line-height: 28px;
+}
+
+.email_qatori {
+  display: flex;
+  justify-content: center;
+}
+
+.email_qatori input {
+  width: 360px;
+  height: 56px;
+  border: none;
+  outline: none;
+  background: var(--och-rang);
+  padding: 0 20px;
+}
+
+.email_qatori button {
+  width: 120px;
+  border: none;
+  background: var(--asosiy-rang);
+  color: var(--oq-rang);
+  cursor: pointer;
+}
+
+/* =======================
+        FOOTER
+======================= */
+
+.footer_qismi {
+  background: var(--asosiy-rang);
+  padding: 60px 0 25px;
+}
+
+.footer_yuqori {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.manzil_qismi h2 {
+  color: var(--oq-rang);
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.manzil_qismi p {
+  color: var(--oq-rang);
+  margin-bottom: 12px;
+}
+
+.ijtimoiy_qismi h3,
+.menyu_qismi h3,
+.kategoriya_qismi h3,
+.kompaniya_qismi h3 {
+  color: var(--oq-rang);
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.icon_qatori {
+  display: flex;
+  gap: 18px;
+}
+
+.icon_qatori a {
+  color: var(--oq-rang);
+  font-size: 18px;
+}
+
+.menyu_qismi,
+.kategoriya_qismi,
+.kompaniya_qismi {
+  display: flex;
+  flex-direction: column;
+}
+
+.menyu_qismi a,
+.kategoriya_qismi a,
+.kompaniya_qismi a {
+  color: var(--oq-rang);
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footer_pasti {
+  border-top: 1px solid rgba(255,255,255,.2);
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.footer_pasti p {
+  color: var(--oq-rang);
+}
+
+@media (max-width: 992px) {
+  .asosiy_qism {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .malumot_tomoni {
+    max-width: 700px;
+  }
+
+  .kartalar_qatori {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .olchamlar {
+    gap: 40px;
+  }
+
+  .pastki_qism {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mahsulot_korinish {
+    padding: 0 0 60px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .asosiy_qism {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .stul_rasmi img {
+    width: 100%;
+  }
+
+  .malumot_tomoni {
+    width: 100%;
+    padding: 30px 24px;
+  }
+
+  .malumot_tomoni h1 {
+    font-size: 28px;
+  }
+
+  .narx_qismi {
+    font-size: 20px;
+    margin: 12px 0 28px;
+  }
+
+  .matn_qismi {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .royxat_qismi li {
+    font-size: 15px;
+  }
+
+  .olcham_qismi {
+    margin: 28px 0;
+  }
+
+  .olchamlar {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .olchamlar h4 {
+    font-size: 15px;
+  }
+
+  .olchamlar p {
+    font-size: 14px;
+  }
+
+  .pastki_qism {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .miqdor_qismi {
+    justify-content: space-between;
+  }
+
+  .son_tanlash {
+    width: 140px;
+    justify-content: space-between;
+  }
+
+  .savat_tugmasi {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .yoqishi_mumkin {
+    padding: 50px 0;
+  }
+
+  .yoqishi_mumkin h2 {
+    font-size: 24px;
+    padding: 0 24px;
+    margin-bottom: 24px;
+  }
+
+  .kartalar_qatori {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 0 24px;
+  }
+
+  .karta_nomi {
+    font-size: 18px;
+  }
+
+  .karta_narxi {
+    font-size: 16px;
+  }
+
+  .tugma_qismi {
+    padding: 0 24px;
+  }
+
+  .tugma_qismi button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .malumot_tomoni {
+    padding: 24px 16px;
+  }
+
+  .malumot_tomoni h1 {
+    font-size: 24px;
+  }
+
+  .narx_qismi {
+    font-size: 18px;
+  }
+
+  .tavsif_qismi h3,
+  .olcham_qismi h3 {
+    font-size: 18px;
+  }
+
+  .kartalar_qatori {
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .karta_nomi {
+    font-size: 16px;
+  }
+
+  .karta_narxi {
+    font-size: 15px;
+  }
+
+  .yoqishi_mumkin h2 {
+    padding: 0 16px;
+  }
+
+  .tugma_qismi {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width:992px) {
+
+  .afzallik_qator {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .footer_yuqori {
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+  }
+
+  .manzil_qismi {
+    grid-column: 1/-1;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .afzallik_qismi {
+    padding: 50px 0;
+  }
+
+  .afzallik_sarlavha {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .afzallik_qator {
+    grid-template-columns: 1fr;
+  }
+
+  .afzallik_karta {
+    padding: 30px;
+  }
+
+  .obuna_qism {
+    background: var(--oq-rang);
+    padding: 40px 0;
+  }
+
+  .obuna_ichi {
+    background: transparent;
+    padding: 0;
+    text-align: left;
+  }
+
+  .obuna_ichi h2 {
+    font-size: 28px;
+  }
+
+  .obuna_ichi p {
+    margin: 20px 0 30px;
+  }
+
+  .email_qatori input {
+    width: 100%;
+  }
+
+  .email_qatori button {
+    width: 120px;
+    flex-shrink: 0;
+  }
+
+  .footer_yuqori {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .kategoriya_qismi {
+    display: none;
+  }
+
+  .manzil_qismi {
+    grid-column: auto;
+  }
+
+  .ijtimoiy_qismi {
+    grid-column: auto;
+  }
+
+}
+
+@media (max-width:500px) {
+
+  .footer_yuqori {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .manzil_qismi {
+    grid-column: 1/-1;
+  }
+
+  .ijtimoiy_qismi {
+    grid-column: 1/-1;
+  }
+
+  .icon_qatori {
+    flex-wrap: wrap;
+  }
+
+  .email_qatori {
+    flex-direction: column;
+  }
+
+  .email_qatori button {
+    width: 100%;
+    height: 56px;
+  }
+
+  .footer_pasti {
+    text-align: center;
+  }
+
+}

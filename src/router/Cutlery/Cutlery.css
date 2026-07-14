@@ -1,0 +1,381 @@
+:root {
+  --asosiy-rang: #2a254b;
+  --matn-rang: #505977;
+  --oq-rang: #ffffff;
+  --fon-rang: #f9f9f9;
+  --toq-rang: #2a254b;
+  --oq: #ffffff;
+  --kulrang: #505977;
+  --och: #f9f9f9;
+  --chiziq: #ebe8f4;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.haqida {
+  padding: 70px 0;
+}
+
+.tepa {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.tepa h1 {
+  max-width: 760px;
+  color: var(--asosiy-rang);
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 400;
+}
+
+.tepa button {
+  width: 170px;
+  height: 56px;
+  border: none;
+  background: var(--fon-rang);
+  color: var(--asosiy-rang);
+  cursor: pointer;
+}
+
+.birinchi_qator,
+.ikkinchi_qator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.chap_qism {
+  background: var(--toq-rang);
+  color: var(--oq-rang);
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chap_qism h2 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.chap_qism p {
+  max-width: 420px;
+  line-height: 28px;
+}
+
+.chap_qism button {
+  margin-top: 220px;
+  width: 170px;
+  height: 56px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--oq-rang);
+  cursor: pointer;
+}
+
+.ong_rasm img,
+.chap_rasm img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ong_matn {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ong_matn h2 {
+  color: var(--asosiy-rang);
+  font-size: 34px;
+  line-height: 46px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.ong_matn p {
+  color: var(--matn-rang);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.ong_matn button {
+  width: 170px;
+  height: 56px;
+  margin-top: 30px;
+  border: none;
+  background: var(--fon-rang);
+  color: var(--asosiy-rang);
+  cursor: pointer;
+}
+
+.afzallik {
+  padding: 70px 0;
+}
+
+.afzallik_sarlavha {
+  text-align: center;
+  font-size: 36px;
+  color: var(--asosiy);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.afzallik_qator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.afzallik_karta {
+  background: var(--och);
+  padding: 45px 35px;
+}
+
+.afzallik_icon {
+  font-size: 22px;
+  color: var(--asosiy);
+  margin-bottom: 18px;
+}
+
+.afzallik_karta h3 {
+  font-size: 22px;
+  color: var(--asosiy);
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.afzallik_karta p {
+  color: var(--kulrang);
+  line-height: 28px;
+}
+
+.obunaa {
+  background: var(--och);
+  padding: 70px 0;
+}
+
+.obuna_qut {
+  background: var(--oq);
+  padding: 80px;
+  text-align: center;
+}
+
+.obuna_qut h2 {
+  font-size: 40px;
+  color: var(--asosiy);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.obuna_qut p {
+  max-width: 520px;
+  margin: auto;
+  color: var(--kulrang);
+  line-height: 28px;
+}
+
+.obuna_input {
+  width: 500px;
+  margin: 40px auto 0;
+  display: flex;
+}
+
+.obuna_input input {
+  flex: 1;
+  height: 56px;
+  border: none;
+  background: var(--och);
+  padding: 0 20px;
+  outline: none;
+}
+
+.obuna_input button {
+  width: 130px;
+  border: none;
+  background: var(--asosiy);
+  color: var(--oq);
+  cursor: pointer;
+}
+
+.pastki {
+  background: var(--asosiy);
+  padding: 60px 0 25px;
+}
+
+.footer_qator {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer_logo h2 {
+  color: var(--oq);
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.footer_logo p,
+.footer_menu a {
+  display: block;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+
+.footer_menu h3,
+.footer_icon h3 {
+  color: var(--oq);
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.iconlar {
+  display: flex;
+  gap: 15px;
+  color: var(--oq);
+  font-size: 20px;
+}
+
+.footer_chiziq {
+  height: 1px;
+  background: rgba(255,255,255,.2);
+  margin: 45px 0 20px;
+}
+
+.footer_copy {
+  color: rgba(255,255,255,.8);
+}
+
+@media (max-width: 992px) {
+
+  .tepa {
+    flex-direction: column;
+  }
+
+  .birinchi_qator,
+  .ikkinchi_qator {
+    grid-template-columns: 1fr;
+  }
+
+  .chap_qism {
+    order: 1;
+  }
+
+  .ong_rasm {
+    order: 2;
+  }
+
+  .chap_rasm {
+    order: 1;
+  }
+
+  .ong_matn {
+    order: 2;
+  }
+
+  .chap_qism button {
+    margin-top: 60px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .haqida {
+    padding: 50px 0;
+  }
+
+  .tepa {
+    margin-bottom: 40px;
+  }
+
+  .tepa h1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  .tepa button {
+    width: 100%;
+  }
+
+  .chap_qism {
+    padding: 40px 30px;
+  }
+
+  .chap_qism h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .chap_qism p {
+    line-height: 24px;
+  }
+
+  .chap_qism button {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .ong_matn {
+    padding: 40px 25px;
+  }
+
+  .ong_matn h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .ong_matn p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .ong_matn button {
+    width: 100%;
+  }
+
+  .ong_rasm img,
+  .chap_rasm img {
+    min-height: 320px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .tepa h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .chap_qism {
+    padding: 30px 20px;
+  }
+
+  .ong_matn {
+    padding: 30px 20px;
+  }
+
+  .chap_qism h2,
+  .ong_matn h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+}

@@ -1,0 +1,442 @@
+:root {
+  --oq: #ffffff;
+  --asosiy: #2a254b;
+  --kulrang: #505977;
+  --tugma: #f9f9f9;
+  --chegara: #ebe8f4;
+  --matn: #505977;
+  --fon: #f9f9f9;
+  --footer: #2a254b;
+  --oq: #ffffff;
+  --border: #4e4d93;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.biz {
+  padding: 80px 0;
+}
+
+.satr {
+  max-width: 700px;
+  margin: 0 auto 70px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 55px;
+  color: var(--asosiy);
+  font-weight: 400;
+}
+
+.qator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.matn {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.matn h2 {
+  color: var(--asosiy);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.matn p {
+  color: var(--kulrang);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.matn button {
+  margin-top: 35px;
+  width: 170px;
+  height: 56px;
+  border: none;
+  background: var(--tugma);
+  color: var(--asosiy);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.img {
+  min-height: 600px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.farq {
+  padding: 80px 0;
+}
+
+.farq_nomi {
+  text-align: center;
+  color: var(--asosiy);
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.farq_qutilar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.farq_quti {
+  background: var(--fon);
+  padding: 40px 30px;
+}
+
+.farq_icon {
+  font-size: 28px;
+  color: var(--asosiy);
+  margin-bottom: 20px;
+}
+
+.farq_quti h3 {
+  color: var(--asosiy);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.farq_quti p {
+  color: var(--matn);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.klub {
+  padding: 170px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.klub_ich {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: var(--oq);
+}
+
+.klub_nomi {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.klub_matn {
+  max-width: 500px;
+  margin: 20px auto 40px;
+  line-height: 28px;
+}
+
+.klub_royxat {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.klub_qator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.klub_icon {
+  font-size: 18px;
+}
+
+.klub_forma {
+  display: flex;
+  justify-content: center;
+}
+
+.klub_forma input {
+  width: 380px;
+  height: 56px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.klub_forma button {
+  width: 120px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  background: var(--tugma);
+  color: var(--oq);
+  font-size: 16px;
+}
+
+.past {
+  background: var(--footer);
+  padding: 60px 0 25px;
+}
+
+.past_qator {
+  display: grid;
+  grid-template-columns: 180px 180px 180px 1fr;
+  gap: 40px;
+}
+
+.past_bolim {
+  display: flex;
+  flex-direction: column;
+}
+
+.past_bolim h3,
+.obuna h3 {
+  color: var(--oq);
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.past_bolim a {
+  color: var(--oq);
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.obuna_quti {
+  display: flex;
+}
+
+.obuna_quti input {
+  flex: 1;
+  height: 56px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  background: rgba(255,255,255,.15);
+  color: var(--oq);
+}
+
+.obuna_quti input::placeholder {
+  color: rgba(255,255,255,.7);
+}
+
+.obuna_quti button {
+  width: 120px;
+  border: none;
+  background: var(--oq);
+  color: var(--footer);
+  cursor: pointer;
+}
+
+.past hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 45px 0 25px;
+}
+
+.past_past {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.past_past p {
+  color: var(--oq);
+}
+
+.ijtimoiy {
+  display: flex;
+  gap: 18px;
+  color: var(--oq);
+  font-size: 20px;
+}
+
+.footer_pasti {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_pasti p {
+  color: var(--oq-rang);
+  font-size: 14px;
+}
+
+.ijtimoiy_tarmoqlar {
+  display: flex;
+  gap: 18px;
+}
+
+.ijtimoiy_tarmoqlar a {
+  color: var(--oq-rang);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+@media (max-width:768px) {
+  .klub {
+    padding: 90px 0;
+  }
+
+  .klub_ich {
+    text-align: left;
+  }
+
+  .klub_nomi {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .klub_matn {
+    margin: 20px 0 30px;
+  }
+
+  .klub_royxat {
+    justify-content: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .klub_forma {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .klub_forma input,
+  .klub_forma button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .farq_qutilar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .farq {
+    padding: 60px 0;
+  }
+
+  .farq_nomi {
+    text-align: left;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
+
+  .farq_qutilar {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .farq_quti {
+    padding: 30px 20px;
+  }
+
+  .farq_icon {
+    font-size: 24px;
+  }
+
+  .farq_quti h3 {
+    font-size: 18px;
+  }
+
+  .farq_quti p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .qator {
+    grid-template-columns: 1fr;
+  }
+
+  .matn1 {
+    order: 1;
+  }
+
+  .img1 {
+    order: 2;
+  }
+
+  .img2 {
+    order: 3;
+  }
+
+  .matn2 {
+    order: 4;
+  }
+
+  .matn {
+    padding: 45px 30px;
+  }
+
+  .img {
+    min-height: 420px;
+  }
+
+  .satr {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .biz {
+    padding: 50px 0;
+  }
+
+  .satr {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .matn {
+    padding: 35px 20px;
+  }
+
+  .matn h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .matn p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .matn button {
+    width: 100%;
+  }
+
+  .img {
+    min-height: 320px;
+  }
+}

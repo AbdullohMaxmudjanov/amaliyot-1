@@ -1,0 +1,42 @@
+.page-shell {
+  min-height: 80vh;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #f8f5ef 0%, #f1e9dc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-card {
+  max-width: 860px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(74, 53, 31, 0.12);
+  padding: 2.5rem;
+  border: 1px solid #ece2d6;
+}
+
+.page-card h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: #3f2f22;
+}
+
+.page-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6f5d4e;
+  margin-bottom: 0.8rem;
+}
+
+.page-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: #f3e8da;
+  color: #8a5a2a;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
